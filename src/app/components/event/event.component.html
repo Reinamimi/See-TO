@@ -1,0 +1,29 @@
+<section>
+<div class="search-container">
+  <input 
+    type="text" 
+    [formControl]="searchControl" 
+    placeholder="Search events by keyword..."
+    class="search-input"
+  />
+</div>
+
+<div class="event-container">
+ 
+
+    @for(e of events; track e.id){
+        <div class="event-card">
+            <img [src]="e.images[0].url" alt="{{ e.name }}" class="event-image"  width="300"
+            height="200">
+            <div class="event-details">
+              <h3>{{ e.name }}</h3>
+              <p> Date: {{ e.dates.start.localDate }}</p>
+              <a [href]="e.url" target="_blank">Learn More</a>
+            </div>
+          </div>
+}
+ 
+  </div>
+
+</section>
+  

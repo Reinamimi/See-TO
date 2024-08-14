@@ -1,0 +1,42 @@
+<form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name</label>
+      <input id="name" formControlName="name" />
+      @if (productForm.get('name')?.invalid && productForm.get('name')?.touched)  {
+        <div >
+            Name is required.
+          </div>
+      }
+    
+    </div>
+    
+    <div>
+      <label for="price">Price</label>
+      <input id="price" type="number" formControlName="price" />
+
+      <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">
+   price is required.
+      </div>
+    </div>
+    
+    <!-- <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">Price is required.</div>
+    <div *ngIf="productForm.get('price')?.invalid && productForm.get('price')?.touched">Price must be a positive number.</div> -->
+    <div>
+      <label for="category">Category</label>
+      <input id="category" formControlName="category" />
+      <div *ngIf="productForm.get('category')?.invalid && productForm.get('category')?.touched">
+        Category is required.
+      </div>
+    </div>
+    
+    <div>
+      <label for="date">Date</label>
+      <input id="date" type="date" formControlName="date" />
+      <div *ngIf="productForm.get('date')?.invalid && productForm.get('date')?.touched">
+        Date is required.
+      </div>
+    </div>
+    
+    <button type="submit" [disabled]="productForm.invalid">Add Product</button>
+  </form>
+  

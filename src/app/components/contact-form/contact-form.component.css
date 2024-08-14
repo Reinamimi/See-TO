@@ -1,0 +1,93 @@
+main {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.contact-form {
+    max-width: 25rem;
+    margin:  1rem auto;
+    padding: 2rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+    width: 90%;
+    /* border: 1px solid black; */
+    padding-right: 35px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    /* margin: 15px; */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #cc5500; /* Burnt Orange */
+  }
+  
+  h3 {
+    color:  #cc5500;
+    /* margin-top: -0.1rem; */
+  }
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #cc5500; /* Burnt Orange */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:disabled {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #e67300;
+  }
+
+
+.notification-banner {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #cc5500; /* Burnt Orange */
+    background-color: #fbe6da;
+    color: #cc5500;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  

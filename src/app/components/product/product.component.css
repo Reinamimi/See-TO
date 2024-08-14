@@ -1,0 +1,13 @@
+main {
+    background-color: #fff;
+    padding: 3rem;
+
+}
+
+table {
+    border: 1px solid black
+}
+tr {
+    border: 1px solid black;
+    padding: 3rem;
+}

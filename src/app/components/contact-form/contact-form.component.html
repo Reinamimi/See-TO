@@ -1,0 +1,44 @@
+
+<main>
+<div *ngIf="submitted" class="notification-banner">
+    Message submitted successfully!
+  </div>
+
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
+    <h3 style="text-align: center;">We'd love to hear from you</h3>
+        <p style="text-align: center;">Leave us a message</p>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input id="name" formControlName="name" type="text" />
+      @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
+        <div class="error">
+          Name is required.
+        </div>
+      }
+    </div>
+  
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" />
+      @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
+        <div class="error">
+          Please enter a valid email address.
+        </div>
+      }
+    </div>
+  
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" formControlName="message"></textarea>
+      @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
+        <div class="error">
+          Message is required.
+        </div>
+      }
+    </div>
+  
+    <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+  </form>
+
+</main>
+  

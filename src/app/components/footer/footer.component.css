@@ -1,0 +1,50 @@
+footer {
+    background-color: #cc5500; /* Burnt Orange */
+    /* position: fixed;
+    width: 100%; */
+    bottom: 0;
+    padding: 1.5rem 0;
+    color: white;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footer-content ul li {
+    display: inline;
+  }
+  
+  .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-content ul li a:hover {
+    color: #ffd700; /* Golden color for hover effect */
+  }
+  
+  .footer-content p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-content p:last-child {
+    margin-top: 0.1rem;
+    font-size: 0.9rem;
+  }
+  

@@ -1,0 +1,17 @@
+section {
+    background-color: #fff;
+    padding: 2rem;
+}
+
+
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 11rem;
+    text-align: center;
+}
+
+h1 {
+    color:   #cc5500;
+    font-size: 2em;
+}
